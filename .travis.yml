@@ -5,7 +5,7 @@ services:
  - docker
 
 before_install:
-   - docker build -t PoojaKho/docker-react -f Dockerfile.dev .
+   - docker build -t poojakho/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true PoojaKho/docker-react npm run test
+  - docker run -e CI=true poojakho/docker-react npm run test
